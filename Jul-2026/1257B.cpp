@@ -12,14 +12,12 @@ int main() {
         long long x, y;
         cin >> x >> y;
 
-        if (x >= y)
+        if (x >= 4)
             cout << "YES\n";
-        else if (x >= 4)
-            cout << "YES\n";
-        else if (y <= 3)
-            cout << "YES\n";
+        else if (x == 1)
+            cout << (y == 1 ? "YES" : "NO") << '\n';
         else
-            cout << "NO\n";
+            cout << (y <= 3 ? "YES" : "NO") << '\n';
     }
 
     return 0;
